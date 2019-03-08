@@ -16,7 +16,7 @@ $ gcloud sql instances create codelab-instance --region=europe-west4
 $ gcloud sql databases create registrants --instance codelab-instance
 ```
 
-Note that when you create sql instances with ```gcloud sql instances create``` the default database engine is ```MySQL 5.7```. For 
+Note that when you create sql instances with ```gcloud sql instances create``` the default database engine is ```MySQL 5.7```. 
 
 # Run application
 
