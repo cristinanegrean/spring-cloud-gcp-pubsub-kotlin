@@ -1,18 +1,17 @@
 package com.example.demo
 
-import org.springframework.boot.autoconfigure.SpringBootApplication
-import org.springframework.boot.runApplication
-
-import org.springframework.context.annotation.Bean
 import com.fasterxml.jackson.databind.ObjectMapper
-import org.springframework.cloud.gcp.pubsub.support.converter.JacksonPubSubMessageConverter
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.beans.factory.annotation.Qualifier
+import org.springframework.boot.autoconfigure.SpringBootApplication
+import org.springframework.boot.runApplication
 import org.springframework.cloud.gcp.pubsub.core.PubSubTemplate
 import org.springframework.cloud.gcp.pubsub.integration.AckMode
 import org.springframework.cloud.gcp.pubsub.integration.inbound.PubSubInboundChannelAdapter
 import org.springframework.cloud.gcp.pubsub.support.BasicAcknowledgeablePubsubMessage
 import org.springframework.cloud.gcp.pubsub.support.GcpPubSubHeaders
+import org.springframework.cloud.gcp.pubsub.support.converter.JacksonPubSubMessageConverter
+import org.springframework.context.annotation.Bean
 import org.springframework.integration.annotation.ServiceActivator
 import org.springframework.integration.channel.DirectChannel
 import org.springframework.messaging.MessageChannel
